@@ -1,4 +1,3 @@
-import { signOut } from "firebase/auth";
 import React from "react";
 import { Link } from "react-router-dom";
 import LoginWithGoogle from "../Hooks/LoginWithGoogle";
@@ -12,10 +11,9 @@ const Header = () => {
         <Link to="/about">About</Link>
         <div className="profile">
           <span>{user?.displayName}</span>
-          <img src={user?.photoURL && user.photoURL}  alt="no loaded photos" />
           {
-              user?.uid ? <button onClick={GoogleSignOut}>SignOut</button> : <Link to='/'> Login</Link>
-            }
+              user?.uid ? <button onClick={GoogleSignOut}>LogOut</button> : <Link to='/'> Login</Link>
+          }
         </div>
     </div>
   );

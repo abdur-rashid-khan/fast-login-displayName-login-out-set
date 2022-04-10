@@ -23,7 +23,7 @@ const LoginWithGoogle = () => {
       })
    }
    // click
-   const clickeHandealer = () =>{
+   const loginBtn = () =>{
       signInWithPopup(auth , provider)
       .then(result => {
          setUser('login successfully');
@@ -32,6 +32,6 @@ const LoginWithGoogle = () => {
          setUser('Login fail')
       })
    }
-   return {user , setUser , clickeHandealer , GoogleSignOut};
+   return {user , setUser , loginBtn , GoogleSignOut};
 };
 export default LoginWithGoogle;
