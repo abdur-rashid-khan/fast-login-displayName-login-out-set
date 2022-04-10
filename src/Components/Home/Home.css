@@ -1,0 +1,13 @@
+.btn{
+   margin-top: 2rem;
+   background-color: blue;
+   color: #fff;
+   border: none;
+   padding: .5rem 1rem;
+   border-radius: .2rem;
+   -webkit-border-radius: .2rem;
+   -moz-border-radius: .2rem;
+   -ms-border-radius: .2rem;
+   -o-border-radius: .2rem;
+   cursor: pointer;
+}

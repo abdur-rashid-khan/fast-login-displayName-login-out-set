@@ -1,0 +1,11 @@
+.header{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.header a{
+   padding-left: 1rem;
+}
+.profile{
+   padding-left: 1rem;
+}
